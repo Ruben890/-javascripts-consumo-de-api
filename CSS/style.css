@@ -1,0 +1,92 @@
+/* importar estylos de letras de GOOGLE FONTS*/
+
+body {
+  background: rgb(37, 49, 109);
+  background: radial-gradient(
+    circle,
+    rgba(37, 49, 109, 1) 0%,
+    rgba(8, 8, 112, 1) 29%,
+    rgba(9, 9, 121, 1) 36%,
+    rgba(31, 179, 209, 1) 100%
+  );
+}
+
+body::-webkit-scrollbar {
+  background-color: #25316d;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5f6f94;
+  border-radius: 25px;
+  height: 15rem;
+}
+
+.img {
+  border-radius: 25px;
+  width: 200px;
+}
+.titulo {
+  color: #f2f2f2;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.pelicula {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.peliculas {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.329);
+  width: 250px;
+  transition: all 0.8s;
+}
+
+.peliculas:hover {
+  transform: scale(110%);
+  transition: all 0.8s;
+  box-shadow: 5px 5px 15px #5f6f94;
+  cursor: pointer;
+}
+
+.container {
+  flex-wrap: wrap;
+}
+
+.nav-footer {
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0px 15px 15px 20px #5f6f94;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #aac4ff;
+}
+
+#anterior {
+  margin-right: 5rem;
+  width: 10rem;
+}
+#Siguiente {
+  width: 10rem;
+}
+
+@media screen and (max-width: 769px) {
+  .pelicula {
+    grid-template-columns: 20rem 20rem 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .peliculas {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
