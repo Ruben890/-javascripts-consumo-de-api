@@ -15,7 +15,7 @@ btnAnterior.addEventListener("click", () => {
 const ConectarApi = async () => {
   try {
     const respuestas = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=0b83932bddfad9331c196d8f304babda&language=es-MX&page=${pag}`
+      `=${pag}`
     );
 
     console.log(respuestas);
