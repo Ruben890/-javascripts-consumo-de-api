@@ -47,19 +47,4 @@ const ConectarApi = async () => {
 };
 ConectarApi();
 
-// !const datos = await respuestas.json();
-//! console.log(datos.title);
-//!esto se usa para capturar los dtos de tipo json que mando la api
-//*para hacer una funcion asincrona se usync
-//* para conectar la api se crea un array funcion el cual te permite conectar a la api
-//* con el metodo fetch(aqui dentro va la url del la api)
-//*cuando se hace una peticion se usa un control de errores es desir try{}catch(error){consolo.log(error)}
-//*para comprobar si el id o codigo el correto seria bueno usar status === 200 que significa que el producto exite ejmplo:
-//? if(varibasle que se conecta con la api.status===200){
-//*aqui se ponen los datos que quieres que imprima
-//!console.log(varible que se conectacon la api)
-//?}
 
-//! siempre es muy importante verifica el tipo de erro que a ocurrdo
-//!para haceder a una seccion de la api tienes que poner
-//?en el link de la api con la direcion a la que te quieres dirigir
